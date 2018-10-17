@@ -1,1 +1,1 @@
-# LObstacle Detection And Avoidance using Sonar
+# Obstacle Detection And Avoidance using Sonar
