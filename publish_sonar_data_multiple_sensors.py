@@ -8,7 +8,7 @@ import time
 # Adding constants
 min = 828
 max = 37630
-no_of_sensors = 4
+no_of_sensors = 1
 
 sonar_const = ( 254 * 2.54 ) / ( max - min ) #max value given by vendor in inches
 # multiplied by 2.54 to convert in cms
