@@ -43,12 +43,12 @@ def fetch_and_publish(portname):
 	if(float(data) == 0 ):
 		measurement = 0
 	else:
-		measurement = str((float(data) - min) * sonar_const +17) # added  offset of 17 derived from experimentation
+		measurement = (float(data) - min) * sonar_const +17 # added  offset of 17 derived from experimentation
 
 	#print("measurement==",measurement)
 	if (measurement < threshold):
 		ret = measurement
-        pub.publish(ret)
+        pub.publish(str(ret))
         
 	rate.sleep()
 
